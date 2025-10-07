@@ -198,6 +198,40 @@
     <h2>How Scalis Uses Artificial Intelligence</h2>
     <p>Scalis is an end-to-end recruiting system that unifies sourcing, CRM, ATS, scheduling, interviewing, and analytics into a single platform. Across each of these stages, AI is built in to assist, optimize, and refine the recruiting process — never to replace it.</p>
 
+    <h3>AI Processing Activities</h3>
+    <p>The table below describes how we use AI in our Platform:</p>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Module</th>
+                <th>Purpose</th>
+                <th>Technology</th>
+                <th>Human Oversight</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Résumé analysis &amp; matching</td>
+                <td>Identify skills/experience that match job requirements</td>
+                <td>Natural Language Processing (NLP), semantic vector embeddings</td>
+                <td>Recruiters review shortlists before outreach</td>
+            </tr>
+            <tr>
+                <td>Candidate ranking / scoring</td>
+                <td>Suggest a numerical "fit score" (0–100)</td>
+                <td>Machine-learning classifiers (e.g., decision trees / gradient boosting)</td>
+                <td>Human review and override required</td>
+            </tr>
+            <tr>
+                <td>Interview summarization</td>
+                <td>Generate text summaries of interviews</td>
+                <td>Transformer-based language models</td>
+                <td>Human validation before record is stored</td>
+            </tr>
+        </tbody>
+    </table>
+
     <h3>Meaningful Information About the Logic Involved</h3>
     <p>Recruiting teams have full control over when and how AI is used. For example, AI can help identify and rank candidates, automate resume parsing, or suggest next steps based on historical hiring data, but every action remains human-guided and reviewable. The platform is designed so that users can toggle between manual and AI-assisted workflows at any stage.</p>
 
@@ -606,114 +640,93 @@
         </thead>
         <tbody>
             <tr>
-                <td>_Secure-*</td>
-                <td>scal.is</td>
-                <td>Stores secure session authentication tokens and user preferences; prevents unauthorised access.</td>
+                <td>__Secure-ENID</td>
+                <td>.google.com</td>
+                <td>Session authentication tokens and user preferences</td>
                 <td>Strictly Necessary</td>
-                <td>Session--6 months (varies)</td>
-            </tr>
-            <tr>
-                <td>SAPISID</td>
-                <td>Google</td>
-                <td>Identifies the user and stores profile info for Google services and embedded content.</td>
-                <td>Strictly Necessary</td>
-                <td>2 years</td>
-            </tr>
-            <tr>
-                <td>HSID</td>
-                <td>Google</td>
-                <td>Security cookie to authenticate users and prevent fraudulent login.</td>
-                <td>Strictly Necessary</td>
-                <td>2 years</td>
-            </tr>
-            <tr>
-                <td>SID</td>
-                <td>Google</td>
-                <td>Stores digitally signed and encrypted Google account ID and most recent login time.</td>
-                <td>Strictly Necessary</td>
-                <td>2 years</td>
-            </tr>
-            <tr>
-                <td>SSID</td>
-                <td>Google</td>
-                <td>Stores user session information for Google services.</td>
-                <td>Strictly Necessary</td>
-                <td>2 years</td>
-            </tr>
-            <tr>
-                <td>NID</td>
-                <td>Google</td>
-                <td>Stores user preferences and customises ads on Google properties.</td>
-                <td>Targeting / Advertising</td>
-                <td>6 months</td>
-            </tr>
-            <tr>
-                <td>28SE-*</td>
-                <td>scal.is</td>
-                <td>Session identifier for internal site navigation and security.</td>
-                <td>Strictly Necessary</td>
-                <td>Session</td>
+                <td>1 month</td>
             </tr>
             <tr>
                 <td>_dd_s</td>
                 <td>Datadog</td>
-                <td>Stores browser performance data for real-user monitoring.</td>
-                <td>Performance / Analytics</td>
-                <td>Session</td>
-            </tr>
-            <tr>
-                <td>rum-*</td>
-                <td>Datadog</td>
-                <td>Real-User Monitoring ID for performance measurement.</td>
+                <td>Tracks user's activity on a website</td>
                 <td>Performance / Analytics</td>
                 <td>Session</td>
             </tr>
             <tr>
                 <td>AEC</td>
                 <td>Google</td>
-                <td>Ensures that requests within a session are made by the user and not malicious sites; also used for ad fraud prevention.</td>
-                <td>Performance / Targeting</td>
-                <td>6 months</td>
-            </tr>
-            <tr>
-                <td>APISID</td>
-                <td>Google</td>
-                <td>Builds a profile of user interests to show relevant ads on Google properties.</td>
-                <td>Targeting / Advertising</td>
-                <td>2 years</td>
-            </tr>
-            <tr>
-                <td>SEARCH_SAMESITE</td>
-                <td>Google</td>
-                <td>Prevents cross-site request forgery during searches; improves security.</td>
-                <td>Functional</td>
+                <td>Session security and ad fraud prevention</td>
+                <td>Statistics</td>
                 <td>6 months</td>
             </tr>
             <tr>
                 <td>SOCS</td>
                 <td>Google</td>
-                <td>Stores a user's cookie consent preferences.</td>
-                <td>Functional</td>
+                <td>Stores cookie consent preferences</td>
+                <td>Statistics</td>
                 <td>13 months</td>
             </tr>
             <tr>
-                <td>SIDCC</td>
-                <td>Google</td>
-                <td>Security cookie to protect user data from unauthorised access and to customise ads.</td>
-                <td>Targeting / Advertising</td>
-                <td>1 year</td>
+                <td>__hssrc</td>
+                <td>.scalis.ai</td>
+                <td>Used to store a unique session ID.</td>
+                <td>Marketing</td>
+                <td>Session</td>
             </tr>
             <tr>
-                <td>sidts-*</td>
-                <td>scal.is</td>
-                <td>Stores temporary session state tokens for navigation and security.</td>
+                <td>__hstc</td>
+                <td>.scalis.ai</td>
+                <td>Used to store a unique session ID.</td>
+                <td>Marketing</td>
+                <td>6 months</td>
+            </tr>
+            <tr>
+                <td>hubspotutk</td>
+                <td>.scalis.ai</td>
+                <td>Used to keep track of a visitors identity.</td>
+                <td>Marketing</td>
+                <td>6 months</td>
+            </tr>
+            <tr>
+                <td>_ga</td>
+                <td>.scalis.ai</td>
+                <td>Tracks user behavior on website.</td>
+                <td>Statistics</td>
+                <td>13 months</td>
+            </tr>
+            <tr>
+                <td>_ga_ID</td>
+                <td>.scalis.ai</td>
+                <td>Used to store and count pageviews.</td>
+                <td>Statistics</td>
+                <td>13 months</td>
+            </tr>
+            <tr>
+                <td>_px3</td>
+                <td>.beehiiv.com</td>
+                <td>Session security and malicious bots' prevention</td>
                 <td>Strictly Necessary</td>
                 <td>Session</td>
             </tr>
             <tr>
-                <td>5b82b66f...</td>
-                <td>scal.is</td>
-                <td>Encrypted session or user token for authentication.</td>
+                <td>_pxvid</td>
+                <td>.beehiiv.com</td>
+                <td>Malicious bots' prevention and Visitor Identification</td>
+                <td>Strictly Necessary</td>
+                <td>Session</td>
+            </tr>
+            <tr>
+                <td>pxcts</td>
+                <td>.beehiiv.com</td>
+                <td>Bot detection and abuse prevention</td>
+                <td>Strictly Necessary</td>
+                <td>Session</td>
+            </tr>
+            <tr>
+                <td>cf_clearance</td>
+                <td>.beehiiv.com</td>
+                <td>Stores the proof of challenge (CAPTCHA) passed.</td>
                 <td>Strictly Necessary</td>
                 <td>Session</td>
             </tr>
