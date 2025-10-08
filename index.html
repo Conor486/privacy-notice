@@ -3,793 +3,685 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Scalis Privacy Notice</title>
+    <title>Scalis - Legal Documents</title>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
             line-height: 1.6;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
             color: #333;
+            background: #f5f5f5;
         }
-        h1 {
-            color: #1a1a1a;
-            border-bottom: 2px solid #0066cc;
-            padding-bottom: 10px;
-        }
-        h2 {
-            color: #0066cc;
-            margin-top: 30px;
-        }
-        h3 {
-            color: #333;
-            margin-top: 20px;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 20px 0;
-            font-size: 14px;
-        }
-        th {
-            background-color: #0066cc;
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
-            padding: 12px;
-            text-align: left;
+            padding: 2rem 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .logo {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+
+        .tagline {
+            font-size: 0.95rem;
+            opacity: 0.9;
+        }
+
+        .tabs {
+            background: white;
+            margin-top: -1rem;
+            border-radius: 8px 8px 0 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            display: flex;
+            overflow-x: auto;
+        }
+
+        .tab {
+            padding: 1rem 2rem;
+            cursor: pointer;
+            border-bottom: 3px solid transparent;
+            transition: all 0.3s ease;
+            white-space: nowrap;
+            font-weight: 500;
+            color: #666;
+        }
+
+        .tab:hover {
+            background: #f8f9fa;
+            color: #333;
+        }
+
+        .tab.active {
+            color: #667eea;
+            border-bottom-color: #667eea;
+            background: #f8f9fa;
+        }
+
+        .content {
+            background: white;
+            padding: 3rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            min-height: 70vh;
+        }
+
+        .tab-content {
+            display: none;
+        }
+
+        .tab-content.active {
+            display: block;
+            animation: fadeIn 0.3s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .doc-header {
+            border-bottom: 2px solid #667eea;
+            padding-bottom: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .doc-title {
+            font-size: 2rem;
+            color: #333;
+            margin-bottom: 0.5rem;
+        }
+
+        .doc-meta {
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        h2 {
+            color: #667eea;
+            margin: 2rem 0 1rem 0;
+            font-size: 1.5rem;
+        }
+
+        h3 {
+            color: #764ba2;
+            margin: 1.5rem 0 0.75rem 0;
+            font-size: 1.2rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        ul, ol {
+            margin-left: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        .section {
+            margin-bottom: 2rem;
+        }
+
+        strong {
+            color: #333;
             font-weight: 600;
         }
-        td {
-            padding: 10px 12px;
-            border: 1px solid #ddd;
-        }
-        tr:nth-child(even) {
-            background-color: #f9f9f9;
-        }
-        ul {
-            padding-left: 25px;
-        }
-        li {
-            margin-bottom: 8px;
-        }
+
         a {
-            color: #0066cc;
+            color: #667eea;
             text-decoration: none;
         }
+
         a:hover {
             text-decoration: underline;
         }
-        .meta {
+
+        .notice-box {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+        }
+
+        .info-box {
+            background: #d1ecf1;
+            border-left: 4px solid #17a2b8;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+            font-size: 0.9rem;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 0.75rem;
+            text-align: left;
+        }
+
+        th {
+            background: #f8f9fa;
+            font-weight: 600;
+            color: #667eea;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 2rem;
             color: #666;
-            font-size: 14px;
-            margin-bottom: 20px;
+            font-size: 0.9rem;
         }
-        blockquote {
-            border-left: 4px solid #0066cc;
-            padding-left: 20px;
-            margin-left: 0;
-            color: #555;
-        }
-        .contact-box {
-            background-color: #f5f5f5;
-            padding: 15px;
-            border-radius: 5px;
-            margin: 15px 0;
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 1rem;
+            }
+
+            .content {
+                padding: 1.5rem;
+            }
+
+            .tab {
+                padding: 0.75rem 1rem;
+                font-size: 0.9rem;
+            }
+
+            .doc-title {
+                font-size: 1.5rem;
+            }
         }
     </style>
 </head>
 <body>
-    <h1>Scalis Privacy Notice</h1>
-    
-    <p class="meta">
-        <strong>Last updated:</strong> 07 October 2025<br>
-        <strong>Version:</strong> v2.1
-    </p>
-
-    <h2>Introduction</h2>
-    <p>This Privacy Notice describes how Scalis LLC ("Scalis") handles your personal data: how we receive, why and how we process, and how we safeguard personal data. We tell you what rights you have, how to exercise those rights and how to contact us if you have questions or concerns.</p>
-
-    <h2>Scope of this Privacy Policy</h2>
-    <p>Scalis LLC ("us", "we", or "our"), operates the <a href="https://scalis.ai">https://scalis.ai</a> website and provides commercial software, products, services and applications, and other professional services (the "Platform" or "Service"). If you have any questions or feedback about this Policy, email us at <a href="mailto:privacy@scalis.ai">privacy@scalis.ai</a> with "Privacy" in the subject line or write to us at:</p>
-    
-    <div class="contact-box">
-        Scalis LLC<br>
-        1000 Brickell Ave., Suite 71<br>
-        Miami, FL 33131
+    <div class="header">
+        <div class="container">
+            <div class="logo">SCALIS</div>
+            <div class="tagline">AI-Powered Recruitment Platform | Legal Documentation</div>
+        </div>
     </div>
 
-    <p>Scalis respects your privacy. We handle your personal data responsibly and are committed to safeguarding your personal data. We act in your best interests and are transparent about personal data processing.</p>
+    <div class="container">
+        <div class="tabs">
+            <div class="tab active" onclick="showTab('privacy')">Privacy Notice</div>
+            <div class="tab" onclick="showTab('tos')">Terms of Service</div>
+            <div class="tab" onclick="showTab('dpa')">Data Processing Addendum</div>
+        </div>
 
-    <p>This Notice applies only to personal information, not to de-identified or aggregate information or other information that cannot identify you.</p>
+        <div class="content">
+            <!-- Privacy Notice Tab -->
+            <div id="privacy" class="tab-content active">
+                <div class="doc-header">
+                    <h1 class="doc-title">SCALIS PRIVACY NOTICE</h1>
+                    <div class="doc-meta">Last updated: 07 October 2025 | Version: v2.3</div>
+                </div>
 
-    <p>Access to and use of Scalis Platform or Services are subject to the Scalis Terms of Service and User Code of Conduct. Certain elements of the Platform or Service may operate under separate or additional terms of practice different from or in addition to those described in this Notice; in those cases, you will be provided separate notice and information relevant to your use of those parts of the Platform or Service.</p>
+                <section class="section">
+                    <h2>INTRODUCTION</h2>
+                    <p>This Privacy Notice describes how Scalis LLC ("Scalis") handles your personal data: how we receive, why and how we process, and how we safeguard personal data. We tell you what rights you have, how to exercise those rights and how to contact us if you have questions or concerns.</p>
+                </section>
 
-    <p>Please read this Notice carefully. Also, please read our Cookie Notice, which tells you how we use cookies and other similar tracking technologies. We regularly review and update this Notice, so we recommend visiting this page occasionally. If we communicate with you, we may notify you of significant changes to privacy practices or processing activities on your personal data. We will notify you before any significant changes to personal data processing begin, such as if we plan to use automated processing or artificial intelligence for decision making.</p>
+                <section class="section">
+                    <h2>SCOPE OF THIS PRIVACY POLICY</h2>
+                    <p>Scalis LLC ("us", "we", or "our"), operates the <a href="https://scalis.ai">https://scalis.ai</a> website and provides commercial software, products, services and applications, and other professional services (the "Platform" or "Service").</p>
+                    
+                    <div class="info-box">
+                        <strong>Contact Us:</strong><br>
+                        Scalis LLC<br>
+                        1000 Brickell Ave., Suite 71<br>
+                        Miami, FL 33131<br>
+                        Email: <a href="mailto:privacy@scalis.ai">privacy@scalis.ai</a>
+                    </div>
 
-    <p>This Notice applies to any personal information we collect through the Platform or Services, associated with:</p>
-    <ul>
-        <li>our (potential) customers, contractors, clients, suppliers and other commercial relations.</li>
-        <li>visitors to our websites and applications;</li>
-        <li>recipients of information from us;</li>
-        <li>all other persons in contact with us.</li>
-    </ul>
+                    <p>Scalis respects your privacy. We handle your personal data responsibly and are committed to safeguarding your personal data. We act in your best interests and are transparent about personal data processing.</p>
+                </section>
 
-    <h2>Data Protection Authority</h2>
-    <p>Subject to applicable law, you have the right to (i) restrict Scalis's use of Information that constitutes your Personal Data and (ii) lodge a complaint with your local data protection authority.</p>
+                <section class="section">
+                    <h2>HOW SCALIS USES ARTIFICIAL INTELLIGENCE</h2>
+                    <p>Scalis is an end-to-end recruiting system that unifies sourcing, CRM, ATS, scheduling, interviewing, and analytics into a single platform. Across each of these stages, AI is built in to assist, optimize, and refine the recruiting process — never to replace it.</p>
+                    
+                    <h3>AI Processing Activities</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Module</th>
+                                <th>Purpose</th>
+                                <th>Technology</th>
+                                <th>Human Oversight</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Résumé analysis & matching</td>
+                                <td>Identify skills/experience that match job requirements</td>
+                                <td>Natural Language Processing (NLP), semantic vector embeddings</td>
+                                <td>Recruiters review shortlists before outreach</td>
+                            </tr>
+                            <tr>
+                                <td>Candidate ranking / scoring</td>
+                                <td>Suggest a numerical 'fit score' (0-100)</td>
+                                <td>Machine-learning classifiers (e.g., decision trees / gradient boosting)</td>
+                                <td>Human review and override required</td>
+                            </tr>
+                            <tr>
+                                <td>Interview summarization</td>
+                                <td>Generate text summaries of interviews</td>
+                                <td>Transformer-based language models</td>
+                                <td>Human validation before record is stored</td>
+                            </tr>
+                        </tbody>
+                    </table>
 
-    <p><strong>We would appreciate the chance to resolve your concerns directly.</strong> If you wish to raise a complaint, please contact our Data Protection Officer who will investigate the matter: <a href="mailto:privacy@scalis.ai">privacy@scalis.ai</a></p>
+                    <div class="notice-box">
+                        <strong>Important:</strong> Scalis does not make solely automated decisions with legal or similarly significant effects; all final employment and hiring decisions involve human judgment.
+                    </div>
+                </section>
 
-    <p>However, you always retain the right to lodge a complaint directly with the appropriate supervisory authority.</p>
-
-    <p>If you are a resident of the European Economic Area and believe we maintain your Personal Data within the scope of the General Data Protection Regulation (GDPR), you may direct questions or complaints to <a href="mailto:privacy@scalis.ai">privacy@scalis.ai</a> or to your local supervisory authority in your EU member state. A complete list of EU/EEA supervisory authorities is available at the <a href="https://edpb.europa.eu/about-edpb/about-edpb/members_en">European Data Protection Board</a>. You may also contact our Article 27 EU Representative listed below, who can receive complaints on our behalf.</p>
-
-    <p>If you are a resident of the United Kingdom and believe we maintain your Personal Data within the scope of the UK GDPR, you may direct questions or complaints to the UK supervisory authority, the <a href="https://ico.org.uk/make-a-complaint/data-protection-complaints/">Information Commissioner's Office</a>, or to our Article 27 UK Representative listed below.</p>
-
-    <p>If you are a resident of Switzerland and believe we maintain your Personal Data within the scope of the Swiss Federal Act on Data Protection (FADP), you may direct questions or complaints to the Swiss Federal Data Protection and Information Commissioner (FDPIC) at <a href="https://www.edoeb.admin.ch">https://www.edoeb.admin.ch</a>.</p>
-
-    <h2>Summary of Terms and Principles</h2>
-    <p>Scalis observes applicable privacy and data protection law in the markets we serve, when processing personal data. This includes European Union's and United Kingdom's General Data Protection Regulation ("GDPR"), GDPR variations in the European Economic Area, Swiss Federal Act on Data Protection (FADP), US States' privacy law and other data protection law as required.</p>
-
-    <p>Generally, personal data are data that can be directly or indirectly traced back to, and identify, a natural person, referred to as a "data subject."</p>
-
-    <p>Personal data processing can refer to anything we might do with personal data, such as collecting, recording, organizing, structuring, storing, updating, or modifying, retrieving, consulting, using, providing by transmission, distributing, making available, aligning, combining, shielding, deleting, or destroying.</p>
-
-    <p>Scalis observes core principles when processing personal data. The data:</p>
-    <ul>
-        <li>are processed lawfully, properly, and transparently;</li>
-        <li>are processed only for the purpose for which they were collected (purpose limitation);</li>
-        <li>are processed as little as possible (data minimization);</li>
-        <li>are processed correctly (accuracy of data);</li>
-        <li>will not be kept longer than necessary (storage and retention limitation);</li>
-        <li>are transferred internationally under applicable international regulations;</li>
-        <li>are processed with safeguards in technical and organizational controls to address security, integrity, and confidentiality; and</li>
-        <li>are processed in systems, programs and services with privacy and security by design.</li>
-    </ul>
-
-    <h2>Collection And Processing</h2>
-    <p>Scalis may be a personal Data Controller or a personal Data Processor, or both, depending upon the nature of the processing and the commercial relationship associated with that processing. A data controller, alone or jointly with others, determines the purposes and means of the processing of the relevant personal data. A data processor processes the relevant personal data based on the instructions of the data controller. In applicable data protection law, Scalis may be a Data Disclosure or a Data Receiver. A discloser sends personal data to a receiver for processing or onward transfer for processing. A processor receives personal data for processing or onward transfer for processing. As the provider of an AI-driven platform, we primarily act as a Data Controller for the personal data processed by our Matching Engine to provide our core services.</p>
-
-    <p>The data collection and processing activities described in this section, including the use of artificial intelligence and automated processing, are integral to the functionality of our Platform. We use our proprietary AI Matching Engine to analyze user information and activity data to generate candidate recommendations and job matches. To provide these services, and as further detailed in our "Data Sharing and Third Parties" section, we leverage specialist third-party vendors to help us collect, store, and analyze this data. Your use of our services constitutes your agreement to these comprehensive data practices. If you do not consent to this, you should not access or use the Platform.</p>
-
-    <h3>What personal data might we process?</h3>
-    <p>Scalis may process:</p>
-    <ul>
-        <li>personal data that you provide to us, such as:
-            <ul>
-                <li>identity information and personal details;</li>
-                <li>contact details;</li>
-                <li>details as described in a curriculum vitae or employment history;</li>
-            </ul>
-        </li>
-        <li>personal data obtained through means of communication and interaction, such as our browsing our website, receiving newsletters, and sending and receiving emails:
-            <ul>
-                <li>identity information and personal details</li>
-                <li>contact details;</li>
-                <li>information about the device with which you visited our website, such as an IP address;</li>
-                <li>your browsing activity on our website, such as:
+                <section class="section">
+                    <h2>YOUR RIGHTS</h2>
+                    <p>You have rights. You can ask us by any means, but sometimes under certain restrictions or conditions, to:</p>
                     <ul>
-                        <li>which data/web pages you have viewed;</li>
-                        <li>how you navigated the website;</li>
-                        <li>whether you opened a newsletter or email and which parts did you click;</li>
-                        <li>dates and times of your visit to the website;</li>
-                        <li>operating system you are using;</li>
-                        <li>Internet address of the website to which a link is made;</li>
-                        <li>geo-location;</li>
-                        <li>data sent to us; or</li>
-                        <li>data downloaded from the website.</li>
+                        <li>Provide access to personal data</li>
+                        <li>Restrict or object to processing</li>
+                        <li>Rectify errors or erase personal data</li>
+                        <li>Receive a portable copy of personal data</li>
+                        <li>Obtain human intervention, express your point of view, and contest any decision made through automated processing</li>
                     </ul>
-                </li>
-            </ul>
-        </li>
-        <li>Personal data obtained from other sources:
-            <ul>
-                <li>data available from public sources such as, but not limited to, LinkedIn;</li>
-                <li>data obtained from the official public sources;</li>
-                <li>data available on public business websites; or</li>
-                <li>data obtained from your employer or client.</li>
-            </ul>
-        </li>
-    </ul>
+                    
+                    <p>You may exercise these rights by submitting your request in writing or by phone to us, adjusting preferences in our consent manager, myConsentChoice, or by sending an email to <a href="mailto:privacy@scalis.ai">privacy@scalis.ai</a>.</p>
+                </section>
 
-    <p>This data is the essential fuel for our AI model. We use it to train, operate, and improve the automated matching services we provide.</p>
+                <section class="section">
+                    <h2>SECURITY</h2>
+                    <p>Security is a core part of our mission, and we take the protection of your information seriously. We apply industry-standard technical, organizational, and administrative measures to help protect your personal information from unauthorized access, misuse, loss, or disclosure.</p>
+                    
+                    <h3>SOC 2 Compliance</h3>
+                    <p>Scalis is currently undergoing a SOC 2 Type II compliance audit to demonstrate our commitment to the highest standards of data security and privacy. Our security practices are designed to meet or exceed SOC 2 requirements for security, availability, processing integrity, confidentiality, and privacy.</p>
+                    
+                    <h3>Payment Card Security</h3>
+                    <p>We use Stripe, Inc. as our third-party payment processor. Stripe is PCI DSS certified. Scalis does not store, process, or have access to your full payment card number.</p>
+                </section>
 
-    <p><strong>See Appendix A -- Data Processing Annex</strong>.</p>
+                <section class="section">
+                    <h2>CONTACT INFORMATION</h2>
+                    <p><strong>Data Protection Officer</strong><br>
+                    Sovy Trust Solutions<br>
+                    1000 Brickell Ave., Suite 71<br>
+                    Miami, FL 33131<br>
+                    Email: <a href="mailto:privacy@scalis.ai">privacy@scalis.ai</a></p>
 
-    <h2>How Scalis Uses Artificial Intelligence</h2>
-    <p>Scalis is an end-to-end recruiting system that unifies sourcing, CRM, ATS, scheduling, interviewing, and analytics into a single platform. Across each of these stages, AI is built in to assist, optimize, and refine the recruiting process — never to replace it.</p>
+                    <p><strong>EU Representative (Article 27 GDPR)</strong><br>
+                    EU Registry Representatives Limited<br>
+                    St. Galls House, St Galls Gardens South, Milltown<br>
+                    Dublin 14, D14 Y882, Ireland<br>
+                    Email: <a href="mailto:scalis@regreps.com">scalis@regreps.com</a></p>
 
-    <h3>AI Processing Activities</h3>
-    <p>The table below describes how we use AI in our Platform:</p>
+                    <p><strong>UK Representative (Article 27 UK GDPR)</strong><br>
+                    UK Registry Representatives Limited<br>
+                    Edmund Christopher House, 43 Bridge Street<br>
+                    Taunton, Somerset, England, TA1 1TP<br>
+                    Email: <a href="mailto:scalis@regreps.com">scalis@regreps.com</a></p>
+                </section>
 
-    <table>
-        <thead>
-            <tr>
-                <th>Module</th>
-                <th>Purpose</th>
-                <th>Technology</th>
-                <th>Human Oversight</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Résumé analysis &amp; matching</td>
-                <td>Identify skills/experience that match job requirements</td>
-                <td>Natural Language Processing (NLP), semantic vector embeddings</td>
-                <td>Recruiters review shortlists before outreach</td>
-            </tr>
-            <tr>
-                <td>Candidate ranking / scoring</td>
-                <td>Suggest a numerical "fit score" (0–100)</td>
-                <td>Machine-learning classifiers (e.g., decision trees / gradient boosting)</td>
-                <td>Human review and override required</td>
-            </tr>
-            <tr>
-                <td>Interview summarization</td>
-                <td>Generate text summaries of interviews</td>
-                <td>Transformer-based language models</td>
-                <td>Human validation before record is stored</td>
-            </tr>
-        </tbody>
-    </table>
+                <section class="section">
+                    <h2>NOTICE TO RESIDENTS OF NEW YORK CITY - AUTOMATED EMPLOYMENT DECISION TOOLS (AEDT)</h2>
+                    <p>If you are a candidate for employment in New York City, this notice is provided in compliance with New York City Local Law 144.</p>
+                    
+                    <h3>Use of AEDT</h3>
+                    <p>Scalis uses Automated Employment Decision Tools (AEDT) as part of our recruitment platform. These tools use artificial intelligence and machine learning to analyze résumés, match candidates to job requirements, and generate candidate scoring.</p>
+                    
+                    <h3>Alternative Selection Process</h3>
+                    <p>You have the right to request an alternative selection process or accommodation that does not rely on AEDT. To request an alternative selection process, please contact us at <a href="mailto:privacy@scalis.ai">privacy@scalis.ai</a> with "NYC AEDT Alternative Process" in the subject line.</p>
+                    
+                    <h3>Bias Audit</h3>
+                    <p>Our AEDT systems are undergoing independent bias audits as required by NYC Local Law 144, conducted by Warden AI. Our initial bias audit is expected to be completed in Q4-2025. A summary of our bias audit results will be published in our Trust Centre at <a href="https://trust.scalis.ai">https://trust.scalis.ai</a>.</p>
+                </section>
+            </div>
 
-    <h3>Meaningful Information About the Logic Involved</h3>
-    <p>Recruiting teams have full control over when and how AI is used. For example, AI can help identify and rank candidates, automate resume parsing, or suggest next steps based on historical hiring data, but every action remains human-guided and reviewable. The platform is designed so that users can toggle between manual and AI-assisted workflows at any stage.</p>
+            <!-- Terms of Service Tab -->
+            <div id="tos" class="tab-content">
+                <div class="doc-header">
+                    <h1 class="doc-title">SCALIS TERMS OF SERVICE</h1>
+                    <div class="doc-meta">Last Updated: October 7, 2025 | Version: 2.0</div>
+                </div>
 
-    <p>Scalis uses AI to enhance recruiter efficiency and decision-making — not to remove the human judgment and relationship-building that drive successful hiring outcomes. Scalis does not make solely automated decisions with legal or similarly significant effects; all final employment and hiring decisions involve human judgment.</p>
+                <div class="notice-box">
+                    <strong>IMPORTANT NOTICE:</strong> These Terms require all disputes between you and Scalis to go through binding arbitration instead of a government court. Job Seekers have the right to opt-out of arbitration for thirty (30) days after agreeing to these Terms.
+                </div>
 
-    <h3>Regulatory Compliance</h3>
-    <p>Scalis has a compliance program that includes both internal and independent auditing of AI as a provider of automated employee decision tools (AEDTs). Scalis has partnered with Warden AI, a US-based independent auditing provider, to provide automated independent AI auditing and assurance using independent and historical data sets of candidate profiles. We are completing the independent audit in Q4-2025, after which the system will provide continuous auditing for bias and other risks. We design our systems to comply with existing and expected regulatory compliance requirements. We address US States requirements such as California, New York, Colorado, Illinois. We address EU AI Act. We incorporate Equal Employment Opportunity Commission (EEOC) guidance on the use of AI and algorithmic tools in hiring and employment decisions. This includes ensuring our tools do not create discriminatory impact based on protected characteristics.</p>
-    
-    <p><strong>EU AI Act Classification:</strong> Under the EU AI Act, AI systems used for employment, worker management, and access to self-employment are classified as "high-risk AI systems." Scalis's recruitment and candidate matching AI systems fall within this high-risk classification. As such, we comply with the EU AI Act's requirements for high-risk AI systems, including: transparency obligations, human oversight requirements, accuracy and robustness standards, cybersecurity measures, quality management systems, and record-keeping obligations. Our compliance with these requirements is documented and available for review by relevant supervisory authorities.</p>
+                <div class="info-box">
+                    <strong>AI-POWERED SERVICES NOTICE:</strong> The Platform utilizes artificial intelligence (AI) and machine learning (ML) systems to provide matching, ranking, parsing, and other services. These AI systems are governed by our Algorithmic Impact and Bias Assessment (AIIA) framework and are subject to ongoing monitoring for fairness, transparency, and accountability.
+                </div>
 
-    <h3>AI Training Data</h3>
-    <p>Our AI models are trained and continuously improved using:</p>
-    <ul>
-        <li>Anonymized and aggregated historical hiring data, including past job descriptions, candidate profiles, and hiring outcomes (with personal identifiers removed);</li>
-        <li>Publicly available job market data and skills taxonomies;</li>
-        <li>Structured datasets that our customers provide through their use of the Platform, processed in accordance with our data processing agreements;</li>
-        <li>Industry-standard datasets used for natural language processing and semantic analysis.</li>
-    </ul>
-    <p>We implement data minimization principles in our training processes and do not use sensitive personal information (such as race, ethnicity, gender, age, or other protected characteristics) as input features for our matching or scoring algorithms. Our training data undergoes quality assurance and bias testing to identify and mitigate potential sources of algorithmic bias before models are deployed.</p>
+                <section class="section">
+                    <h2>1. INTRODUCTION</h2>
+                    <p>By accessing or using our Platform, you agree to be bound by these Terms of Service ("Terms") and Our Policies, as defined below (together, the "Agreement"). This Agreement governs your use of the online platform and other products and services made available by Scalis LLC including the Scalis.AI job matching platform that connects jobseeker talent with potential employers using artificial intelligence and machine learning technologies.</p>
+                    
+                    <h3>Contact Us</h3>
+                    <p>You may contact us regarding the Platform or these Terms at:</p>
+                    <ul>
+                        <li>Support page: <a href="https://help.scalis.ai">help.scalis.ai</a></li>
+                        <li>Address: 1000 Brickell Ave. Suite 71, Miami, FL 33131</li>
+                        <li>Email: <a href="mailto:support@scalis.ai">support@scalis.ai</a></li>
+                        <li>For AI governance questions: <a href="mailto:ai-governance@scalis.ai">ai-governance@scalis.ai</a></li>
+                    </ul>
+                </section>
 
-    <h3>Fairness and Bias Mitigation</h3>
-    <p>Scalis' compliance program includes preparing impact assessments, transparency notices, audits and disclosures. These provide our customers with the inputs to their regulatory and compliance program, allowing our assurance work to be included in their overall compliance preparedness and reporting.</p>
+                <section class="section">
+                    <h2>2. ELIGIBILITY; YOUR RESPONSIBILITIES</h2>
+                    <p>In these Terms, "you" and "your" means you as the user of the Platform. Additionally:</p>
+                    <ul>
+                        <li>If you use the Platform as an individual seeking employment opportunities (as a "Job Seeker"), the Additional Terms for Job Seekers apply to you.</li>
+                        <li>If you use the Platform on behalf of or as an Employer, the Additional Terms for Employers apply to you.</li>
+                    </ul>
+                    <p>Regardless of your user role, you must be 18 or older to use the Platform, or otherwise of legal age to form a binding contract in your jurisdiction.</p>
+                </section>
 
-    <p>We conduct fairness and bias testing and monitor performance to reduce disparate impact across demographic groups. We have partnered with Warden AI to conduct independent automated AI auditing. Our initial independent Algorithmic Impact Assessment (AIIA) and Bias Audit is expected to be completed in Q4-2025, after which Warden AI will provide continuous automated auditing for bias and other risks. A summary of our independent AIIA and Bias Audit will be published in our Trust Centre at <a href="https://trust.scalis.ai">https://trust.scalis.ai</a> when available. To request access under NDA, email <a href="mailto:privacy@scalis.ai">privacy@scalis.ai</a>.</p>
+                <section class="section">
+                    <h2>6. ADDITIONAL TERMS FOR JOB SEEKERS</h2>
+                    
+                    <h3>AI-Powered Matching Engine and Transparency</h3>
+                    <p>By providing a Resume and Profile information, you understand and agree that the Platform will use artificial intelligence and machine learning algorithms to analyze your information and help identify Employers and Listings that may be a good fit for your skills, location, and background.</p>
+                    
+                    <h3>AI System Information</h3>
+                    <p>Our matching and ranking systems employ the following AI technologies:</p>
+                    <ul>
+                        <li><strong>Résumé Parser (BERT-NER):</strong> Extracts structured data from CVs and resumes</li>
+                        <li><strong>Matching Engine (Siamese BERT):</strong> Matches candidates to roles using semantic analysis</li>
+                        <li><strong>Candidate Ranking (XGBoost):</strong> Scores and ranks candidates based on multiple factors</li>
+                        <li><strong>Interview Summariser (T5 Transformer):</strong> Summarizes interview content (when applicable)</li>
+                    </ul>
+                    
+                    <h3>Fairness and Bias Mitigation</h3>
+                    <p>These AI systems undergo:</p>
+                    <ul>
+                        <li>Quarterly fairness testing using demographic parity, equal opportunity, and disparate impact ratio metrics</li>
+                        <li>Continuous monitoring for bias and performance drift using tools like IBM AIF360, Fairlearn, and SHAP</li>
+                        <li>Regular retraining on diverse datasets to minimize bias</li>
+                        <li>Human oversight and validation as described in our AIIA framework</li>
+                    </ul>
+                    
+                    <h3>Transparency Commitments</h3>
+                    <p>You have the right to:</p>
+                    <ul>
+                        <li>Understand how AI decisions affect your matching and ranking</li>
+                        <li>Request information about the logic and factors influencing your matches</li>
+                        <li>Contact us at <a href="mailto:support@scalis.ai">support@scalis.ai</a> or <a href="mailto:ai-governance@scalis.ai">ai-governance@scalis.ai</a> with questions about AI-driven decisions</li>
+                    </ul>
+                </section>
 
-    <h2>Why do we process personal data?</h2>
-    <p>Scalis may process your personal data for the following purposes:</p>
-    <ul>
-        <li>To provide our core AI-driven recruitment and matching services. This is our primary purpose. It involves using automated systems and AI to analyze personal data (like skills, experience, and job requirements) to create profiles and predict the suitability of candidates for specific roles and vice-versa.</li>
-        <li>To manage, secure, and improve our Platform, including the performance of our AI models.</li>
-        <li>For commercial contract purposes, such as fulfilling our service obligations to an employer using our Platform.</li>
-        <li>To measure the use of our website and services.</li>
-        <li>To contact you about newsletters or other marketing, but only if you have opted in.</li>
-        <li>To verify your identity when necessary.</li>
-    </ul>
+                <section class="section">
+                    <h2>7. ADDITIONAL TERMS FOR EMPLOYERS</h2>
+                    
+                    <h3>AI Governance and Human Oversight Requirements</h3>
+                    
+                    <h4>Mandatory Human Review</h4>
+                    <p>As an Employer using the Platform, you acknowledge and agree that:</p>
+                    <ol>
+                        <li>All AI-generated candidate rankings, matches, and recommendations are designed as <strong>decision-support tools only</strong>, not as final decision-making tools</li>
+                        <li>You must conduct meaningful human review of all AI-driven outputs before making any hiring, screening, or selection decisions</li>
+                        <li>You retain override capability for all AI recommendations and are solely responsible for final hiring decisions</li>
+                        <li>You will not use AI outputs as the sole basis for any adverse employment action</li>
+                        <li>You must comply with all applicable employment laws, including EEOC guidance on the use of AI and algorithmic tools in hiring</li>
+                    </ol>
+                    
+                    <h4>AI Transparency Obligations</h4>
+                    <p>You agree to:</p>
+                    <ul>
+                        <li>Inform candidates when AI tools are used in the evaluation process, to the extent required by applicable law</li>
+                        <li>Provide candidates with reasonable explanations of AI-driven decisions upon request</li>
+                        <li>Enable candidates to exercise opt-out rights where required by law</li>
+                        <li>Maintain records of human oversight and validation of AI recommendations</li>
+                    </ul>
+                    
+                    <h4>AIIA Compliance</h4>
+                    <p>Scalis maintains an Algorithmic Impact and Bias Assessment (AIIA) framework that includes:</p>
+                    <ul>
+                        <li>Regular bias testing of all AI models using IBM AIF360, Fairlearn, and SHAP</li>
+                        <li>Quarterly fairness audits for high-impact models</li>
+                        <li>Continuous monitoring using AIOps tools (Evidently AI, Arize)</li>
+                        <li>Human oversight requirements for all AI decisions affecting candidate outcomes</li>
+                        <li>Transparency reporting available at our Trust Centre (<a href="https://trust.scalis.ai">trust.scalis.ai</a>)</li>
+                    </ul>
+                </section>
 
-    <h2>By what legal means do we process personal data?</h2>
-    <p><strong>Scalis may process your data:</strong></p>
-    <ul>
-        <li>if you have given us permission to process personal data for one or more specific purposes. We are transparent and inform you so you can grant or remove consent with genuine choice and control;</li>
-        <li>if the processing is necessary for the performance of an agreement to which you are a party, or to take measures at your request prior to the conclusion of an agreement;</li>
-        <li>if the processing is necessary for our legitimate interest or of a third party unless your rights and interests outweigh either our or the third-party's legitimate interest;</li>
-        <li>if processing is necessary to comply with a legal obligation;</li>
-        <li>if the processing is necessary to protect your vital interests or those of another natural person;</li>
-        <li>if the processing is necessary for the performance of a task carried out in the public interest or in the exercise of official authority vested in us;</li>
-    </ul>
+                <section class="section">
+                    <h2>12. AI-SPECIFIC TERMS</h2>
+                    
+                    <h3>(a) AI System Updates and Changes</h3>
+                    <p>We reserve the right to update, retrain, or modify our AI models and algorithms to improve performance, address bias, comply with legal requirements, or enhance user experience. We will provide notice of material changes to our AI systems that significantly affect how candidate matching or ranking operates.</p>
+                    
+                    <h3>(b) AI System Limitations</h3>
+                    <p>You acknowledge and agree that:</p>
+                    <ul>
+                        <li>AI systems may produce errors, false positives, or false negatives</li>
+                        <li>AI matching is probabilistic and not deterministic</li>
+                        <li>AI outputs should be used as one input among many in hiring decisions</li>
+                        <li>Human judgment remains essential for all employment decisions</li>
+                    </ul>
+                    
+                    <h3>(c) Data Use for AI Improvement</h3>
+                    <p><strong>For Job Seekers:</strong> We do not use your Candidate Data for AI model training or analytics beyond providing the Platform services to you, unless you provide explicit written consent.</p>
+                    <p><strong>For Employers:</strong> Employer Personal Data is not used for AI model training, profiling, or analytics beyond providing the Platform services, as specified in the Data Processing Addendum Section 2.3 (Prohibited Use).</p>
+                    
+                    <h3>(d) AI Incident Reporting</h3>
+                    <p>If you experience or suspect:</p>
+                    <ul>
+                        <li>Algorithmic bias or discriminatory outcomes</li>
+                        <li>AI system errors affecting hiring decisions</li>
+                        <li>Privacy violations related to AI processing</li>
+                        <li>Other AI-related concerns</li>
+                    </ul>
+                    <p>Please report immediately to: <a href="mailto:ai-governance@scalis.ai">ai-governance@scalis.ai</a> or <a href="mailto:support@scalis.ai">support@scalis.ai</a></p>
+                </section>
+            </div>
 
-    <h2>Your Rights</h2>
-    <p><strong>You have rights.</strong></p>
-    <p>You can ask us by any means, but sometimes under certain restrictions or conditions, to:</p>
-    <ul>
-        <li>provide access to personal data;</li>
-        <li>restrict or object to processing;</li>
-        <li>rectify errors or erase personal data;</li>
-        <li>receive a portable copy of personal data;</li>
-        <li>obtain human intervention, express your point of view, and contest any decision made through automated processing;</li>
-    </ul>
+            <!-- DPA Tab -->
+            <div id="dpa" class="tab-content">
+                <div class="doc-header">
+                    <h1 class="doc-title">EMPLOYER DATA PROCESSING ADDENDUM</h1>
+                    <div class="doc-meta">Version 1.2</div>
+                </div>
 
-    <p>You can complain to a supervisory authority that is the data protection regulator.</p>
+                <section class="section">
+                    <p>This Employer Data Processing Addendum ("DPA") forms part of the Terms of Service between Scalis LLC ("Scalis") and you (as an "Employer") that incorporates this DPA by reference (the "Agreement"). This DPA governs the processing of Employer Personal Data by Scalis in providing its job-matching platform (the "Platform") pursuant to the Agreement.</p>
+                    
+                    <div class="info-box">
+                        <strong>Scope:</strong> This DPA solely applies to Employer Personal Data, meaning Personal Data an Employer provides through the Platform. In those limited situations, Scalis acts as a processor of Employer Personal Data on your behalf (as controller).
+                    </div>
+                </section>
 
-    <p>You may exercise these rights by submitting your request in writing or by phone to us, adjusting preferences in our consent manager, <strong>myConsentChoice</strong>, or by sending an email to <a href="mailto:privacy@scalis.ai">privacy@scalis.ai</a>. We are required to verify your identity before your request can be met.</p>
+                <section class="section">
+                    <h2>1. DEFINITIONS</h2>
+                    <ul>
+                        <li><strong>"Applicable Data Protection Law"</strong> means applicable law governing the processing of Personal Data, including U.S. Data Protection Laws and European Data Protection Laws.</li>
+                        <li><strong>"Automated Decision-Making"</strong> means processing of Personal Data for evaluating personal aspects of a natural person, which produces legal effects concerning them or similarly significantly affects them.</li>
+                        <li><strong>"Candidate Data"</strong> means Personal Data relating to an Employer's job seekers, candidates, or applicants, which is a subset of Employer Personal Data.</li>
+                        <li><strong>"Security Incident"</strong> means a confirmed breach of security leading to the accidental or unlawful destruction, loss, alteration, unauthorized disclosure of, or access to, Personal Data.</li>
+                    </ul>
+                </section>
 
-    <p>Unless explicitly stated otherwise below, we will respond to your request without undue delay, and within one month. In principle, your requests will be processed electronically (and will therefore be replied to by email), unless this is not possible, or you request otherwise.</p>
+                <section class="section">
+                    <h2>2. PROCESSING OF EMPLOYER PERSONAL DATA</h2>
+                    
+                    <h3>2.1. Roles of the Parties</h3>
+                    <p>Employer is the controller and Scalis is the processor of Employer Personal Data.</p>
+                    
+                    <h3>2.2. Scalis's Processing</h3>
+                    <p>Scalis will process Employer Personal Data only to provide the Platform in accordance with the Agreement and this DPA. The details of processing are in Appendix A.</p>
+                    
+                    <h3>2.3. Prohibited Use</h3>
+                    <div class="notice-box">
+                        <strong>Important:</strong> Scalis shall not retain, use, or disclose Employer Personal Data, including Candidate Data, for analytics, profiling, AI model training, or any other secondary purpose beyond providing the Platform as instructed by the Employer, unless expressly authorized in writing by the Employer.
+                    </div>
+                </section>
 
-    <p>In principle, we will not charge you for request processing, unless your requests are excessive, manifestly unfounded or if you request additional copies when exercising your right of access, and charges are subject to applicable data protection law.</p>
+                <section class="section">
+                    <h2>3. SECURITY AND CONFIDENTIALITY</h2>
+                    
+                    <h3>3.1. Technical and Organizational Measures</h3>
+                    <p>Scalis shall implement and maintain the technical and organizational measures described in Appendix B.</p>
+                    
+                    <h3>3.3. Security Incident Response</h3>
+                    <p>Upon becoming aware of a Security Incident, Scalis will notify you without undue delay, and in any event not later than 72 hours, and will take reasonable steps to mitigate the effects of the Security Incident.</p>
+                </section>
 
-    <h3>Viewing and/or modifying data</h3>
-    <p>You can ask us at any time, by any means, to indicate which categories of your personal data we hold or are processed, for which purposes, from which data source, and what retention period(s) is(are) applied. In addition, you can ask us at any time to complete, correct or delete your data. We will correct inaccurate personal data we have about you. If we have changed your personal data, we will notify you accordingly.</p>
+                <section class="section">
+                    <h2>4. ARTIFICIAL INTELLIGENCE AND AUTOMATED DECISION-MAKING</h2>
+                    
+                    <h3>4.1. Transparency and Enablement</h3>
+                    <p>Where the Platform uses Automated Decision-Making to process Candidate Data, Scalis shall provide the Employer with sufficient information about the logic involved and the capabilities of the Platform to enable the Employer to meet its transparency and fairness obligations under Applicable Data Protection Law and EEOC guidance.</p>
+                    
+                    <h3>4.2. Human Oversight</h3>
+                    <p>Scalis shall ensure the Platform includes features that enable the Employer to conduct a human review of decisions made through Automated Decision-Making.</p>
+                    
+                    <h3>4.3. Opt-Out Rights</h3>
+                    <p>The Platform shall include functionality to enable the Employer to honour any data subject's request to opt out of Automated Decision-Making where required by law.</p>
+                    
+                    <h3>4.4. Bias Mitigation</h3>
+                    <p>Scalis commits to regularly monitoring its AI models for unlawful bias and will take reasonable steps to mitigate any such bias detected.</p>
+                    
+                    <h3>4.5. Candidate Transparency Support</h3>
+                    <p>Scalis shall provide reasonable assistance to the Employer to meet transparency obligations towards candidates, including providing standardized explanations of the logic, significance, and intended consequences of its Automated Decision-Making processes.</p>
+                </section>
 
-    <h3>Limit the processing of your data</h3>
-    <p>You can ask us to temporarily restrict, object to or withdraw consent to the processing of your personal data. We will tell you if we cannot honor your request and explain why.</p>
+                <section class="section">
+                    <h2>5. SUB-PROCESSING</h2>
+                    
+                    <h3>5.1. General Authorization</h3>
+                    <p>Employer provides a general written authorization for Scalis to engage sub-processors.</p>
+                    
+                    <h3>5.2. Sub-processor List and Objections</h3>
+                    <p>Scalis shall maintain a current list of its sub-processors at its public Trust Centre. Scalis will provide at least 15 days' prior written notice of any new sub-processor. Employer may object on reasonable data protection grounds.</p>
+                    
+                    <h3>Current Sub-processors</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Sub-processor</th>
+                                <th>Service Provided</th>
+                                <th>Data Processing Activity</th>
+                                <th>Location</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Amazon Web Services (AWS)</td>
+                                <td>Cloud infrastructure and hosting</td>
+                                <td>Platform hosting, data storage, compute services</td>
+                                <td>United States</td>
+                            </tr>
+                            <tr>
+                                <td>Google Cloud Platform</td>
+                                <td>Cloud infrastructure and AI services</td>
+                                <td>Platform hosting, data storage, AI/ML model infrastructure</td>
+                                <td>United States</td>
+                            </tr>
+                            <tr>
+                                <td>Snowflake</td>
+                                <td>Data warehousing and analytics</td>
+                                <td>Data warehousing, analytics processing</td>
+                                <td>United States</td>
+                            </tr>
+                            <tr>
+                                <td>OpenAI</td>
+                                <td>AI and natural language processing</td>
+                                <td>Resume parsing, semantic matching, interview summarization, candidate ranking</td>
+                                <td>United States</td>
+                            </tr>
+                            <tr>
+                                <td>Warden AI</td>
+                                <td>AI-powered security and fraud detection</td>
+                                <td>Anomaly detection, fraud prevention, security monitoring</td>
+                                <td>United States</td>
+                            </tr>
+                            <tr>
+                                <td>Datadog</td>
+                                <td>Application performance monitoring</td>
+                                <td>System monitoring, logging, performance analytics</td>
+                                <td>United States</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
 
-    <h3>Ask to transfer personal data</h3>
-    <p>You can ask us to provide to you or a third party your personal data in a structured, common, and machine-readable form.</p>
+                <section class="section">
+                    <h2>8. AUDIT AND COMPLIANCE</h2>
+                    
+                    <h3>8.1. Compliance Information</h3>
+                    <p>Scalis shall make available information necessary to demonstrate compliance with this DPA.</p>
+                    
+                    <h3>8.2. Third-Party Audits</h3>
+                    <p>Scalis shall <strong>obtain and thereafter maintain</strong> its SOC 2 Type II attestation (or a similar standard) annually and provide the report to Employer upon request, subject to confidentiality.</p>
+                    
+                    <h3>8.3. Further Audits</h3>
+                    <p>Employer may conduct an audit of Scalis's processing activities, no more than once annually, if the SOC 2 report is insufficient to demonstrate compliance.</p>
+                </section>
 
-    <h3>Right to be forgotten</h3>
-    <p>You can ask us to delete your personal data. We will tell you if we cannot honour your request and explain why.</p>
+                <section class="section">
+                    <h2>9. DATA RETENTION AND DELETION</h2>
+                    
+                    <h3>9.1. Deletion</h3>
+                    <p>Following termination of the Agreement, Scalis shall, within 30 days, securely delete all Employer Personal Data, including from backups within 90 days.</p>
+                    
+                    <h3>9.2. Retention</h3>
+                    <p>During the term of the Agreement, Scalis will retain system logs for security and performance purposes for a maximum of 12 months. Employer Personal Data within the Platform will be retained for the duration of the Agreement, subject to deletion by the Employer.</p>
+                </section>
 
-    <p>Exercising your rights does not affect processing that has already taken place, unless incorrect data has been used in previous processing and it can be reprocessed with correct data.</p>
-
-    <h2>Children's Privacy</h2>
-    <p>Our Platform and services are not intended for or directed at individuals under the age of <strong>18</strong>. We do not knowingly collect personal data from anyone under the age of 18. If we become aware that we have inadvertently collected personal data from a person under 18, we will take steps to delete that information as quickly as possible. If you are a parent or guardian and believe your child has provided us with personal data, please contact us at <a href="mailto:privacy@scalis.ai">privacy@scalis.ai</a></p>
-
-    <h2>Security</h2>
-    <p>Security is a core part of our mission, and we take the protection of your information seriously. We apply industry-standard technical, organizational, and administrative measures to help protect your personal information from unauthorized access, misuse, loss, or disclosure. These safeguards are designed to reflect the sensitivity of the information we collect, process, and store, as well as the current state of technology.</p>
-
-    <p><strong>SOC 2 Compliance:</strong> Scalis is currently undergoing a SOC 2 Type II compliance audit to demonstrate our commitment to the highest standards of data security and privacy. Our security practices are designed to meet or exceed SOC 2 requirements for security, availability, processing integrity, confidentiality, and privacy.</p>
-
-    <p><strong>Payment Card Security:</strong> We use Stripe, Inc. as our third-party payment processor. Stripe is PCI DSS certified. Scalis does not store, process, or have access to your full payment card number. We only retain the last four digits of your card, expiration date, and billing information as necessary for our records and customer service.</p>
-
-    <h3>Security Incident Response</h3>
-    <p>In the event of a security incident that affects your personal data, we will notify you and relevant supervisory authorities in accordance with applicable law. We maintain an incident response plan to detect, respond to, and recover from security incidents. For questions about our incident response procedures, please contact <a href="mailto:privacy@scalis.ai">privacy@scalis.ai</a>.</p>
-
-    <p>For detailed and current information about our security practices, certifications, sub-processors, and compliance status, please visit our Trust Centre at <a href="https://trust.scalis.ai">https://trust.scalis.ai</a>.</p>
-
-    <p>Despite our efforts, no method of transmission over the Internet or method of electronic storage is completely secure. For this reason, we cannot guarantee absolute security of your information. If you use links that take you to third-party websites, please be aware that we are not responsible for the privacy or security practices of those sites.</p>
-
-    <h2>Cookie Notice: Cookies And Tracking Technologies</h2>
-    <p>Scalis uses cookies and tracking technologies on our websites.</p>
-
-    <p>In this Cookie Notice, we inform you about our cookies practices, a listing of cookies that are always enabled and others that are enabled after consent, their purpose and details such as classification, provider/domain, and retention period before expiry.</p>
-
-    <p>Cookies are small pieces of information that are stored on your computer to provide control for current functions while browsing our websites, for recognition of preferences on subsequent visits to our websites, and for third-party features.</p>
-
-    <p>We use some cookies as strictly necessary components of our websites. We use other cookies in functional, analytical, and marketing categories only when you provide consent directly with <strong>myConsentChoice</strong> or when your browser provides preference information to myConsentChoice in the browser session.</p>
-
-    <p>You will be prompted with <strong>myConsentChoice</strong> when visiting our websites. You can accept or reject all optional cookies or manage preferences within the consent manager. You can change your preferences to grant or withdraw consent at any time.</p>
-
-    <p><strong>Universal Opt-Out Signals:</strong> We honor recognized universal opt-out preference signals (such as Global Privacy Control) where required by applicable law.</p>
-
-    <h3>Consent Expiry</h3>
-    <p>We remember your consent preferences for 30 days. You can change your consent preferences at any time by clicking on the <strong>Manage Consent</strong> link from our website's footer. You can then adjust the available preference sliders to 'On' or 'Off', and save by clicking 'Save Choices'. You may need to refresh your page for your settings to take effect. The data sent by us and linked to cookies, user-identifiers (e.g., User-IDs) or advertising-identifiers are automatically deleted after the third-party expiry period. Monthly deletions for expired cookies and tracking technologies are processed automatically.</p>
-
-    <h3>Google Processing</h3>
-    <p>If you have given your consent, Google Analytics and Google Tag Manager, a web analysis service of Google Ireland Limited ("Google") is then enabled on our websites. The use includes the "Universal Analytics" operating mode. This makes it possible to assign data, sessions, and interactions across multiple devices to a pseudonymous user ID and then analyse activities across devices.</p>
-
-    <p>Google may transfer to and process consent-granted personal data in the United States. However, as IP anonymisation (IP masking) is activated on our websites, your IP address will be shortened by Google in advance within member states of the European Union or in other signatory states per the Agreement on the European Economic Area. The IP address transmitted by your browser as part of our use of Google Analytics is not combined with other data from Google. Further information on terms of use and data protection can be found at <a href="https://www.google.com/analytics/terms/de.html">https://www.google.com/analytics/terms/de.html</a> or <a href="https://policies.google.com/?hl=en">https://policies.google.com/?hl=en</a>.</p>
-
-    <h3>Purposes of Google Processing</h3>
-    <p>Google will use personal data provided to evaluate your use of our websites, to compile reports on website activity and other services related to website use.</p>
-
-    <h3>Legal Basis of Google Processing</h3>
-    <p>Consent is the legal basis for Google Analytics.</p>
-
-    <h3>Recipients or Categories of Recipients</h3>
-    <p>Google is the recipient of the collected data and is an independent controller.</p>
-
-    <p>You can also prevent Google from collecting the data generated by the cookie and relating to your use of the website (including your IP address) and from processing this data by Google by downloading and installing the <a href="https://support.google.com/analytics/answer/181881">Browser Add-on</a>. Opt-out cookies will prevent future collection of your data when you visit our website. To prevent Universal Analytics from collecting data across different devices, you must opt-out on all systems used. If you click here, the opt-out cookie will be set: <a href="https://support.google.com/analytics/answer/181881">Disable Google Analytics.</a></p>
-
-    <p><strong>See Appendix B -- Cookie and Browser Storage.</strong></p>
-
-    <h2>Third Parties and International Transfers</h2>
-    <p>Scalis may engage third parties who process personal data as part of our Platform or Services. These third-party sub-processors act on our instruction under contract and under the same purposes and lawful bases set out in this privacy statement. These may be:</p>
-    <ul>
-        <li>(government) organizations;</li>
-        <li>service providers; or</li>
-        <li>contractors/suppliers, including but not limited to suppliers of IT services.</li>
-    </ul>
-
-    <p>Our sub-processors include Warden AI, a US-based provider of independent AI auditing and bias testing services, which processes candidate profile data for the purpose of conducting algorithmic impact assessments and bias audits. Data sharing with Warden AI is governed by a data processing agreement and is limited to the purposes of AI compliance auditing and assurance.</p>
-
-    <p>Scalis remains accountable for personal data processing of our sub-processors as described in the Privacy Notice and under applicable data protection law.</p>
-
-    <p>A current and comprehensive list of all sub-processors, including their names, locations, and the services they provide, is maintained and regularly updated in our Trust Centre at <a href="https://trust.scalis.ai">https://trust.scalis.ai</a>. We will provide notice of any changes to our sub-processor list through the Trust Centre and, where required, through direct communication with affected customers.</p>
-
-    <p>We enter service agreements that include data processing addendums. The addendums include EU standard contractual clauses (SCC), UK international data transfer agreements or addendums (IDTA) or other contractual clauses and schedules as required by applicable data protection law.</p>
-
-    <p>Scalis will not sell or share the data to any third party for its use in marketing or solicitation programs.</p>
-
-    <p>The third party is a joint controller if we and the third party jointly define the purposes and means of processing. The third party is an independent controller if the third party defines the purposes and means of processing separately from us. The controller distinctions can vary depending upon data protection processing purposes and processing activities.</p>
-
-    <h3>International Transfers</h3>
-    <p>Scalis does business internationally. We may need to transfer your personal data to third parties established outside of designated areas of applicable data protection law, such as transfers outside the European Economic Area, United Kingdom, or Switzerland.</p>
-
-    <p>All international data transfers are subject to applicable data protection law. We follow the guidance and directives of those regulations, including the use of adequacy decisions by competent data protection supervisory authorities, Standard Contractual Clauses (SCCs) approved by the European Commission, UK International Data Transfer Agreements (IDTAs), and Swiss-specific contractual clauses as required by the Swiss Federal Act on Data Protection (FADP). These contractual measures are supplemented by industry accepted technical and organisational measures including Transfer Impact Assessments where appropriate. We have measures that apply across all processing and ones tailored for distinct personal data processing purposes and processing activities. We will only transfer your personal data if an appropriate level of protection is in place.</p>
-
-    <p>For international data transfers from the European Economic Area, United Kingdom, and Switzerland to the United States, we rely on Standard Contractual Clauses and equivalent transfer mechanisms as appropriate. These are supplemented by additional technical and organizational safeguards as required by applicable law and CJEU jurisprudence (including the Schrems II decision) to ensure adequate protection of your personal data.</p>
-
-    <p>We maintain comprehensive documentation of our international transfer mechanisms and safeguards, including Transfer Impact Assessments, which are available upon request to supervisory authorities and as required by applicable data protection law.</p>
-
-    <h2>Contact Information</h2>
-    
-    <h3>Data Protection Officer</h3>
-    <div class="contact-box">
-        Sovy Trust Solutions<br>
-        1000 Brickell Ave., Suite 71<br>
-        Miami, FL 33131<br>
-        Email: <a href="mailto:privacy@scalis.ai">privacy@scalis.ai</a>
+                <section class="section">
+                    <h2>10. LIABILITY</h2>
+                    <p>The total aggregate liability of either Party under this DPA is subject to the 'Limitation of Liability' section of the Agreement, except that such limitation shall not apply to liability arising from a Party's data security breach, gross negligence, willful misconduct, or unlawful discrimination or bias resulting from the use of Automated Decision-Making.</p>
+                </section>
+            </div>
+        </div>
     </div>
 
-    <h3>EU Representative (Article 27 GDPR)</h3>
-    <div class="contact-box">
-        EU Registry Representatives Limited<br>
-        St. Galls House<br>
-        St Galls Gardens South, Milltown<br>
-        Dublin 14, D14 Y882<br>
-        Ireland<br>
-        Email: <a href="mailto:scalis@regreps.com">scalis@regreps.com</a>
+    <div class="footer">
+        <p>© 2025 Scalis LLC. All Rights Reserved. | <a href="https://trust.scalis.ai">Trust Centre</a> | <a href="https://help.scalis.ai">Support</a></p>
+        <p>For questions: <a href="mailto:privacy@scalis.ai">privacy@scalis.ai</a> | <a href="mailto:support@scalis.ai">support@scalis.ai</a> | <a href="mailto:ai-governance@scalis.ai">ai-governance@scalis.ai</a></p>
     </div>
 
-    <h3>UK Representative (Article 27 UK GDPR)</h3>
-    <div class="contact-box">
-        UK Registry Representatives Limited<br>
-        Edmund Christopher House<br>
-        43 Bridge Street<br>
-        Taunton, Somerset<br>
-        England, TA1 1TP<br>
-        Email: <a href="mailto:scalis@regreps.com">scalis@regreps.com</a>
-    </div>
-
-    <h2>Notices for United States</h2>
-
-    <h3>Right to Access and Data Portability</h3>
-    <p>If you are a resident of California, Colorado, Connecticut, Delaware, Indiana, Iowa, Kentucky, Maryland, Minnesota, Montana, Nebraska, Nevada, New Hampshire, New Jersey, Oregon, Rhode Island, Tennessee, Texas, Utah, or Virginia:</p>
-    <blockquote>
-        <p>You have an additional right to know the categories and specific pieces of Personal Information we have collected about you, including a description of the categories of sources from which we have collected that information, the business or commercial purpose for collecting or sharing that information, and the categories of third parties with whom we have shared that information. You may also designate an authorized agent to submit a request on your behalf by submitting proof of written authorization along with your request.</p>
-    </blockquote>
-
-    <h3>Right to Deletion or Erasure</h3>
-    <p>If you are a resident of California, Colorado, Connecticut, Delaware, Indiana, Iowa, Kentucky, Maryland, Minnesota, Montana, Nebraska, Nevada, New Hampshire, New Jersey, Oregon, Rhode Island, Tennessee, Texas, Utah, or Virginia:</p>
-    <blockquote>
-        <p>You have a right to ask that we delete your information subject to appropriate exceptions. You may also designate an authorized agent to submit a request on your behalf by submitting proof of written authorization along with your request.</p>
-    </blockquote>
-
-    <h3>Right to Correct</h3>
-    <p>If you are a resident of California, Colorado, Connecticut, Virginia, Montana, Oregon, Texas, or Delaware:</p>
-    <blockquote>
-        <p>You have the right to correct inaccurate personal information that we maintain about you, taking into account the nature of the personal information and the purposes of the processing. You may submit a request to correct your personal information by contacting us at <a href="mailto:privacy@scalis.ai">privacy@scalis.ai</a>. We may need to verify your identity before we fulfill your request.</p>
-    </blockquote>
-
-    <h3>Response Timeframes and Appeal Rights</h3>
-    <p>If you are a resident of California, Colorado, Connecticut, Virginia, Montana, Oregon, or other states with comprehensive privacy laws:</p>
-    <blockquote>
-        <p>We will respond to your verifiable consumer request within 45 days of receipt (or as otherwise required by your state's law). If we require more time, we will inform you of the reason and extension period in writing. We will deliver our written response electronically unless you request otherwise.</p>
-        <p><strong>Right to Appeal:</strong> If we decline to take action on your request, you have the right to appeal our decision. To appeal, please contact us at <a href="mailto:privacy@scalis.ai">privacy@scalis.ai</a> with "Appeal" in the subject line within a reasonable period after receiving our decision. We will respond to your appeal within 45 days (or as required by applicable law). If we deny your appeal, we will provide you with information about how to contact your state's Attorney General or data protection authority to submit a complaint.</p>
-    </blockquote>
-
-    <h3>Non-Discrimination</h3>
-    <blockquote>
-        <p>We will not discriminate against you for exercising any of your privacy rights under applicable state law. This means we will not deny you goods or services, charge you different prices or rates, provide you a different level or quality of goods or services, or suggest that you may receive a different price or level of quality, solely because you exercised your privacy rights. However, we may offer financial incentives permitted by applicable law that can result in different prices, rates, or quality levels, provided that any such financial incentive is reasonably related to the value of your personal information.</p>
-    </blockquote>
-
-    <h3>Sensitive Personal Information</h3>
-    <blockquote>
-        <p>Certain states, including California, Colorado, Connecticut, Virginia, and others, provide additional protections for "sensitive personal information." In the context of our recruiting and employment services, we may process sensitive personal information such as:</p>
-        <ul>
-            <li>Social security numbers, driver's license numbers, or other government identifiers (for employment verification and onboarding purposes)</li>
-            <li>Precise geolocation data (derived from IP addresses for location-relevant job matching)</li>
-            <li>Employment history and background check information</li>
-        </ul>
-        <p>We process this sensitive information only for the purposes disclosed in this Privacy Notice and as permitted by applicable law. Where required by law, we obtain your consent before processing sensitive personal information, or provide you with the opportunity to limit our use and disclosure of such information.</p>
-    </blockquote>
-
-    <h3>Universal Opt-Out Mechanisms</h3>
-    <blockquote>
-        <p>We recognize and honor opt-out preference signals transmitted through Universal Opt-Out Mechanisms (UOOMs) as required by applicable state law, including California, Colorado, and other states that recognize such mechanisms. This includes signals such as the Global Privacy Control (GPC). When we detect such a signal from your browser, we will treat it as a valid request to opt out of the sale or sharing of your personal information and, where applicable, targeted advertising. You can learn more about the Global Privacy Control and how to enable it at <a href="https://globalprivacycontrol.org">https://globalprivacycontrol.org</a>.</p>
-    </blockquote>
-
-    <h3>California Notice of Sale</h3>
-    <blockquote>
-        <p>We do not sell the personal information of California residents, nor have we sold California resident personal information in the past 12 months. We have no actual knowledge of selling the personal information of minors under the age of 16.</p>
-    </blockquote>
-
-    <h3>Notice of Sale to Residents of Connecticut, Colorado, Delaware, Indiana, Iowa, Kentucky, Maryland, Minnesota, Montana, Nebraska, New Hampshire, New Jersey, Nevada, Oregon, Rhode Island, Tennessee, Texas, Utah, or Virginia</h3>
-    <blockquote>
-        <p>We do not sell any personal information we collect to any third parties. If we were to do so in the future, we will update this Privacy Notice and provide residents with the opportunity to opt-out of the sale of their personal information.</p>
-    </blockquote>
-
-    <h3>Notice to Residents of New York City - Automated Employment Decision Tools (AEDT)</h3>
-    <blockquote>
-        <p>If you are a candidate for employment in New York City, this notice is provided in compliance with New York City Local Law 144.</p>
-        <p><strong>Use of AEDT:</strong> Scalis uses Automated Employment Decision Tools (AEDT) as part of our recruitment platform. These tools use artificial intelligence and machine learning to analyze résumés, match candidates to job requirements, and generate candidate scoring. The specific AI systems we use are described in detail in the "How Scalis Uses Artificial Intelligence" section of this Privacy Notice, including our Résumé Analysis & Matching module and Candidate Ranking/Scoring module.</p>
-        <p><strong>Alternative Selection Process:</strong> You have the right to request an alternative selection process or accommodation that does not rely on AEDT. If you request an alternative process, your application will be reviewed manually by human recruiters without the use of AI-powered scoring or ranking systems. Your résumé and qualifications will be assessed directly by our recruiting team using traditional evaluation methods. To request an alternative selection process, please contact us at <a href="mailto:privacy@scalis.ai">privacy@scalis.ai</a> with "NYC AEDT Alternative Process" in the subject line, and include your name and the position(s) you are applying for.</p>
-        <p><strong>Data Collection:</strong> When AEDT is used, we collect and analyze the information you provide in your job application, including your résumé, work history, skills, education, and other qualifications as described in the "What personal data might we process?" section of this Privacy Notice. This data is retained as described in Appendix A - Data Processing Annex.</p>
-        <p><strong>Bias Audit:</strong> Our AEDT systems are undergoing independent bias audits as required by NYC Local Law 144, conducted by Warden AI, an independent third-party auditing provider. Our initial bias audit is expected to be completed in Q4-2025, after which we will implement continuous automated bias monitoring. These audits assess whether our AI tools have disparate impact on the basis of race, ethnicity, or sex. Upon completion, a summary of our bias audit results, including the date of the audit and the distribution date, will be published in our Trust Centre at <a href="https://trust.scalis.ai">https://trust.scalis.ai</a>. To request detailed audit information under a non-disclosure agreement, please contact <a href="mailto:privacy@scalis.ai">privacy@scalis.ai</a>.</p>
-        <p><strong>Human Oversight:</strong> All hiring decisions involve human judgment and review. AEDT systems provide recommendations and scores to assist recruiters, but final employment decisions are always made by human decision-makers who review all relevant information, including information not assessed by the AEDT.</p>
-    </blockquote>
-
-    <h3>Notice to Residents of California</h3>
-    <blockquote>
-        <p>If you are a California resident, California Data protection Law provides you with certain rights as described in California Privacy Rights Act (CPRA), which amended the California Consumers Privacy Act (CCPA).</p>
-        <p>California permits you to opt out of the disclosure of your Personal Information by us to third parties for those third parties' direct marketing purposes. We do not disclose your personal information to third parties for the third parties' direct marketing purposes unless you affirmatively agree to it. You may opt-out of this disclosure by submitting your request to <a href="mailto:privacy@scalis.ai">privacy@scalis.ai</a>. We may need to verify your identity before we fulfill your request.</p>
-    </blockquote>
-
-    <h3>Notice to Residents of Colorado, Iowa, New Hampshire, Tennessee, or Utah</h3>
-    <blockquote>
-        <p>If you are a resident of Colorado, Iowa, New Hampshire, Tennessee, or Utah their respective data protection law contains certain consumer rights, including the rights of resident consumers to opt out of the Sale of Personal Data and the Processing of Personal Data for Targeted Advertising.</p>
-        <p>These States permits you to opt out of the disclosure of your Personal Information by us to third parties under a Sale of Personal Data or Targeted Advertising purposes. We do not disclose your personal information to third parties for these purposes unless you affirmatively agree to it. You may opt-out of this disclosure by submitting your request to <a href="mailto:privacy@scalis.ai">privacy@scalis.ai</a>, or, for Colorado, by one of Colorado's specified Universal Opt-Out Mechanisms (UOOM). We may need to verify your identity before we fulfil your request.</p>
-    </blockquote>
-
-    <h3>Notice to Residents of Colorado, Connecticut, Delaware, Indiana, Kentucky, Maryland, Minnesota, Montana, New Jersey, Nebraska, Oregon, Rhode Island, Texas, or Virginia</h3>
-    <blockquote>
-        <p>If you are a resident of Colorado, Connecticut, Delaware, Indiana, Kentucky, Maryland, Minnesota, Montana, New Jersey, Nebraska, Oregon, Rhode Island, Texas, or Virginia, their respective Data Protection Law contains certain consumer rights, including the rights of resident consumers to opt out of the Sale of Personal Data, the Processing of Personal Data for Targeted Advertising, and profiling in furtherance of solely automated decisions that produce legal or similarly significant effects.</p>
-        <p>You have the right to opt out of profiling in furtherance of solely automated decisions that produce legal or similarly significant effects. Scalis does not make such automated decisions; all final employment and hiring decisions involve human judgment.</p>
-        <p>These States permits you to opt out of the disclosure of your Personal Information by us to third parties under a Sale of Personal Data, Targeted Advertising or Profiling for Automated Decisions purposes. We do not disclose your personal information to third parties for these purposes unless you affirmatively agree to it. You may opt-out of this disclosure by submitting your request to <a href="mailto:privacy@scalis.ai">privacy@scalis.ai</a>. We may need to verify your identity before we fulfill your request.</p>
-    </blockquote>
-
-    <h2>Compliance with Emerging AI and Privacy Regulations</h2>
-    <p>The regulatory landscape for AI and data privacy is rapidly evolving. In addition to the laws specifically referenced in this Privacy Notice, Scalis monitors and adapts to emerging federal and state regulations governing artificial intelligence, automated decision-making, and data privacy. This includes:</p>
-    <ul>
-        <li>Proposed and enacted federal AI regulations and guidance from agencies including the FTC, EEOC, and others</li>
-        <li>State-level AI and algorithmic accountability laws</li>
-        <li>Industry-specific employment screening and fairness requirements</li>
-    </ul>
-    <p>We update this Privacy Notice as needed to reflect changes in applicable law. For questions about our compliance with specific regulations, contact <a href="mailto:privacy@scalis.ai">privacy@scalis.ai</a>.</p>
-
-    <h2>Practices, Protection And Controls</h2>
-    <p>Scalis follows internal policy and applicable data protection legislation in its data protection compliance program. We have an Information Security Management System (ISMS) and a Personal Information Management System (PIMS) in place, aligned with SOC 2 requirements. Those management systems include industry accepted physical, administrative, organisational, and technical measures to maintain security, integrity, and confidentiality.</p>
-
-    <p><strong>Transparency and Accountability:</strong> We maintain a public Trust Centre at <a href="https://trust.scalis.ai">https://trust.scalis.ai</a> where you can access:</p>
-    <ul>
-        <li>Current security certifications and compliance status</li>
-        <li>List of sub-processors and their locations</li>
-        <li>Security white papers and documentation</li>
-        <li>Data processing locations</li>
-        <li>Algorithmic Impact Assessment (AIIA) summaries (when available)</li>
-        <li>Incident response procedures</li>
-    </ul>
-
-    <p>Measures and controls include:</p>
-    <ul>
-        <li>administrative controls for policy, guidelines and procedures, training, governance, periodic audit reviews and regularly testing, assessing, and evaluating the effectiveness of technical and organisational measures</li>
-        <li>administrative controls for contractual practices such as confidentiality agreements, data processing agreements, SCCs, IDTAs and specific mechanisms for certain countries</li>
-        <li>SOC 2-aligned security controls covering security, availability, processing integrity, confidentiality, and privacy</li>
-        <li>annual third-party security assessments and penetration testing</li>
-        <li>measures for ensuring ongoing confidentiality, integrity, availability and resilience of processing systems and services</li>
-        <li>measures for ensuring data minimisation</li>
-        <li>measures for allowing data portability and ensuring erasure</li>
-        <li>physical security controls where personal data are processed</li>
-        <li>technical security controls including Multi-Factor Authentication (MFA) and Zero Trust architecture</li>
-        <li>user identification and authorisation</li>
-        <li>conditional and role-based access</li>
-        <li>pseudonymisation and data encryption at rest, in processing and in transit, when applicable and feasible</li>
-        <li>system configuration, including changes to default configurations</li>
-        <li>device controls, monitoring, auto management controls</li>
-        <li>events logging and monitoring</li>
-        <li>vulnerability management and regular security patching</li>
-        <li>incident response and business continuity planning</li>
-        <li>vendor risk assessment program</li>
-        <li>data disposition controls</li>
-        <li>we do not store personal data for longer than is necessary, according to internal policy or after statutory periods associated with the purpose of the processing.</li>
-    </ul>
-
-    <h2>Appendix A - Data Processing Annex</h2>
-    
-    <table>
-        <thead>
-            <tr>
-                <th>Data processing activity</th>
-                <th>Data subjects</th>
-                <th>Categories of personal data</th>
-                <th>Retention Period</th>
-                <th>Legal Basis for the data processing</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Job Application Processing</td>
-                <td>Job applicants</td>
-                <td>Name, contact details, CV, cover letter</td>
-                <td>Unsuccessful applicants: 12 months after the position is filled</td>
-                <td>Legitimate Interest</td>
-            </tr>
-            <tr>
-                <td>Candidate Assessment</td>
-                <td>Job applicants</td>
-                <td>Interview notes, assessment results</td>
-                <td>Unsuccessful applicants: 12 months after the position is filled</td>
-                <td>Legitimate Interest</td>
-            </tr>
-            <tr>
-                <td>Offer &amp; Onboarding</td>
-                <td>Successful job applicants</td>
-                <td>Bank details, proof of identity, PPS number</td>
-                <td>Duration of employment + 7 years</td>
-                <td>Contractual Necessity &amp; Legal Obligation</td>
-            </tr>
-            <tr>
-                <td>Account Management Data<br>Login credentials, permissions, and key account actions (e.g., creation date, logins, profile updates).</td>
-                <td>We collect, process, and store this data to operate your account.</td>
-                <td>To create, secure, and maintain your account at your direction and provide our services.</td>
-                <td>Performance of a contract.</td>
-                <td>Duration of your active account. Accounts are subject to deletion after 3 years of inactivity.</td>
-            </tr>
-            <tr>
-                <td>Activity Data<br>Areas of the Platform you visit, where you click, scroll, hover, or otherwise interact, and the timing of that activity.</td>
-                <td>We analyze and process this data using automated systems and our AI models to understand user behavior and preferences.</td>
-                <td>To train and operate our AI Matching Engine to provide relevant job matches. To improve our security and fraud prevention.</td>
-                <td>Our legitimate interest in providing and improving our core AI-driven matching service. Processing for security is necessary for the performance of a contract.</td>
-                <td>24 months from collection, after which it is anonymized. Anonymized data is retained for long-term service improvement.</td>
-            </tr>
-            <tr>
-                <td>Communication Data<br>Interactions with or through Scalis, via email, platform notifications, or other channels.</td>
-                <td>We collect, analyze, and profile your communication data using automated systems.</td>
-                <td>To provide relevant job listings to Job Seekers and applications to Employers. To send you relevant marketing communications (if consented). To improve our Platform and services.</td>
-                <td>Our legitimate interest in providing a relevant service. We rely on your consent for marketing messages and provide an opt-out.</td>
-                <td>Duration of your active account. Data is subject to deletion after 3 years of inactivity.</td>
-            </tr>
-            <tr>
-                <td>Contact Information<br>Name, phone number, email, and address.</td>
-                <td>We collect, process, and store your contact information.</td>
-                <td>To send you essential transactional messages. To facilitate account creation and coordinate interviews. To send marketing and job alerts (if consented).</td>
-                <td>Transactional emails are sent as part of the performance of a contract. Marketing and alerts are sent based on your consent.</td>
-                <td>Duration of your active account. Data is subject to deletion after 3 years of inactivity.</td>
-            </tr>
-            <tr>
-                <td>Device Information<br>IP address, device identifiers, browser type (user agent).</td>
-                <td>We collect, process, and store your device information, including imprecise location data derived from your IP address.</td>
-                <td>To help you find relevant job listings in your geographic area. For security, fraud prevention, and to ensure platform integrity.</td>
-                <td>Our legitimate interests in keeping our Platform secure and providing location-relevant features.</td>
-                <td>12 months from collection for security and fraud analysis purposes.</td>
-            </tr>
-            <tr>
-                <td>Messaging Data<br>Messages you send through the Platform, including via a connected ATS.</td>
-                <td>We process, monitor, and analyze message content via automated means to ensure policy compliance and improve our services.</td>
-                <td>For quality control, content moderation, and to enforce our Terms of Service. To improve our AI Matching Engine, optimize search results, and provide relevant product features.</td>
-                <td>Our legitimate interest in keeping our Platform safe and improving our services. Monitoring for malicious content is necessary for the performance of a contract.</td>
-                <td>Retained while your account is active to provide service history. Messages are subject to deletion after 3 years of account inactivity.</td>
-            </tr>
-            <tr>
-                <td>Payment Information<br>Last four digits of your payment card, expiration date, and billing information.</td>
-                <td>We use a third-party processor (Stripe, Inc.) to handle payments. Scalis never stores your full card number.</td>
-                <td>To process payment for chargeable services and to comply with legal processes and financial reporting obligations.</td>
-                <td>To comply with our legal obligations for financial reporting. Necessary for the performance of a contract to provide a paid service.</td>
-                <td>7 years after the transaction to comply with financial and tax law requirements.</td>
-            </tr>
-            <tr>
-                <td>Calendar Information<br>Your availability and interview responses, including from linked third-party providers (e.g., Google Calendar).</td>
-                <td>We receive and push calendar data via API from third-party providers you connect. We do not provide this data to our Matching Engine.</td>
-                <td>To facilitate the scheduling and management of interviews between Employers and Job Seekers.</td>
-                <td>Necessary for the performance of a contract to provide interview scheduling services.</td>
-                <td>Retained only for the duration needed to manage the interview process. Data is deleted 90 days after the interview date.</td>
-            </tr>
-            <tr>
-                <td>Social Login Data<br>Name, profile picture, and email address from a third-party social account (e.g., Google, LinkedIn).</td>
-                <td>We store this information to authenticate you and, with your instruction, to help populate your Scalis profile.</td>
-                <td>To make signing into and using the Platform easier and more secure.</td>
-                <td>Your consent, which you provide by choosing to use Social Login. You can revoke this in your account settings.</td>
-                <td>Retained while your social account is linked and your Scalis account is active. Deleted upon account deletion or after 3 years of inactivity.</td>
-            </tr>
-            <tr>
-                <td>User Feedback Data<br>Ratings, survey responses, and text feedback you provide.</td>
-                <td>We process, store, and analyze this content, including via automated means, to identify trends and areas for improvement.</td>
-                <td>To improve our Platform, AI models, and overall services.</td>
-                <td>Our legitimate interest in operating and improving our business based on user feedback.</td>
-                <td>36 months from submission, after which the feedback is anonymized.</td>
-            </tr>
-            <tr>
-                <td>Website Analytics</td>
-                <td>Website visitors</td>
-                <td>IP address, browser type, OS, pages visited</td>
-                <td>14 months</td>
-                <td>Consent</td>
-            </tr>
-            <tr>
-                <td>Contact Form Submissions</td>
-                <td>Website visitors</td>
-                <td>Name, email address, phone number, message content</td>
-                <td>For the duration of the inquiry + 1 year</td>
-                <td>Legitimate Interest</td>
-            </tr>
-            <tr>
-                <td>Marketing Communications</td>
-                <td>Website visitors, customers</td>
-                <td>Name, email address</td>
-                <td>Until consent is withdrawn</td>
-                <td>Consent</td>
-            </tr>
-        </tbody>
-    </table>
-
-    <h2>Appendix B -- Cookie and Browser Storage Annex</h2>
-    <p>This appendix forms part of our Privacy Notice and provides a detailed list of cookies and browser storage technologies used on our website(s). It includes the name, provider, purpose, type, expiry, and legal basis for each technology. This list is reviewed and updated regularly to ensure accuracy.</p>
-
-    <table>
-        <thead>
-            <tr>
-                <th>Cookie Name</th>
-                <th>Provider</th>
-                <th>Purpose</th>
-                <th>Category</th>
-                <th>Retention</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>__Secure-ENID</td>
-                <td>.google.com</td>
-                <td>Session authentication tokens and user preferences</td>
-                <td>Strictly Necessary</td>
-                <td>1 month</td>
-            </tr>
-            <tr>
-                <td>_dd_s</td>
-                <td>Datadog</td>
-                <td>Tracks user's activity on a website</td>
-                <td>Performance / Analytics</td>
-                <td>Session</td>
-            </tr>
-            <tr>
-                <td>AEC</td>
-                <td>Google</td>
-                <td>Session security and ad fraud prevention</td>
-                <td>Statistics</td>
-                <td>6 months</td>
-            </tr>
-            <tr>
-                <td>SOCS</td>
-                <td>Google</td>
-                <td>Stores cookie consent preferences</td>
-                <td>Statistics</td>
-                <td>13 months</td>
-            </tr>
-            <tr>
-                <td>__hssrc</td>
-                <td>.scalis.ai</td>
-                <td>Used to store a unique session ID.</td>
-                <td>Marketing</td>
-                <td>Session</td>
-            </tr>
-            <tr>
-                <td>__hstc</td>
-                <td>.scalis.ai</td>
-                <td>Used to store a unique session ID.</td>
-                <td>Marketing</td>
-                <td>6 months</td>
-            </tr>
-            <tr>
-                <td>hubspotutk</td>
-                <td>.scalis.ai</td>
-                <td>Used to keep track of a visitors identity.</td>
-                <td>Marketing</td>
-                <td>6 months</td>
-            </tr>
-            <tr>
-                <td>_ga</td>
-                <td>.scalis.ai</td>
-                <td>Tracks user behavior on website.</td>
-                <td>Statistics</td>
-                <td>13 months</td>
-            </tr>
-            <tr>
-                <td>_ga_ID</td>
-                <td>.scalis.ai</td>
-                <td>Used to store and count pageviews.</td>
-                <td>Statistics</td>
-                <td>13 months</td>
-            </tr>
-            <tr>
-                <td>_px3</td>
-                <td>.beehiiv.com</td>
-                <td>Session security and malicious bots' prevention</td>
-                <td>Strictly Necessary</td>
-                <td>Session</td>
-            </tr>
-            <tr>
-                <td>_pxvid</td>
-                <td>.beehiiv.com</td>
-                <td>Malicious bots' prevention and Visitor Identification</td>
-                <td>Strictly Necessary</td>
-                <td>Session</td>
-            </tr>
-            <tr>
-                <td>pxcts</td>
-                <td>.beehiiv.com</td>
-                <td>Bot detection and abuse prevention</td>
-                <td>Strictly Necessary</td>
-                <td>Session</td>
-            </tr>
-            <tr>
-                <td>cf_clearance</td>
-                <td>.beehiiv.com</td>
-                <td>Stores the proof of challenge (CAPTCHA) passed.</td>
-                <td>Strictly Necessary</td>
-                <td>Session</td>
-            </tr>
-        </tbody>
-    </table>
-
+    <script>
+        function showTab(tabName) {
+            // Hide all tab contents
+            const contents = document.querySelectorAll('.tab-content');
+            contents.forEach(content => content.classList.remove('active'));
+            
+            // Remove active class from all tabs
+            const tabs = document.querySelectorAll('.tab');
+            tabs.forEach(tab => tab.classList.remove('active'));
+            
+            // Show selected tab content
+            document.getElementById(tabName).classList.add('active');
+            
+            // Add active class to clicked tab
+            event.target.classList.add('active');
+            
+            // Scroll to top
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
 </body>
 </html>
